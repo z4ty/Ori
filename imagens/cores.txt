@@ -1,0 +1,7 @@
+EM HEXADECIMAL
+
+Azul MUITO escuro: #010A26
+Azul escuro: #1D2173
+Azul: #3059C3
+Ciano: #14B5D9
+Azul Claro: #5DF7FF
