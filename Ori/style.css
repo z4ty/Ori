@@ -1,0 +1,188 @@
+:root {
+    --corTexto : rgba(234, 255, 255, 0.911);
+    --corFundo : #010a26;
+    --cor1 : #1D2173;
+    --cor2 : #3059C3;
+    --cor4 : #14B5D9;
+    --cor5 : #5DF7FF;
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+html {
+    background-image: url("imagens/background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    color: var(--corTexto);
+}
+
+/* menu e submenu*/
+
+nav button {
+  color: var(--corTexto);
+  display: inline-block;
+  text-decoration: none;
+  padding: 0.5%;
+  border: none;
+  background-color: var(--corFundo);
+  font-size: 115%;
+  transition: background .2s;
+
+}
+
+nav button:hover {
+  background-color: var(--cor1); 
+}
+
+nav ul{    
+  text-align: center;
+  list-style-type: none;
+  padding: 0;
+  background-color: var(--corFundo);
+  font-size:120%;
+  border-style: solid;
+  border-color: var(--cor2);
+
+}
+
+nav ul img {
+  float:left;
+  padding: 0%;
+  margin-left: 0.4%;
+}
+
+nav ul li {
+  display: inline;
+  position: relative;
+}
+
+nav ul li a {
+  color: var(--corTexto);
+  display: inline-block;
+  text-decoration: none;
+  padding: 0.5%;
+  transition: background .2s;
+}
+
+nav ul li a:hover {
+  background-color: var(--cor1);
+}
+
+nav ul ul{
+  text-align: left;
+  display: none;
+  left: 0;
+  position: absolute;
+  width: 130%;
+}
+
+nav ul li:hover ul {
+  display: block;
+}
+
+nav ul ul li a {
+  display: block;
+}
+
+.langnav {
+  width: 100%;
+  border: none;
+}
+
+.jnav{
+  width: 235%;
+}
+
+.hnav {
+  width: 140%;
+}
+
+/* iframe */
+.piframe {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 56.25%;
+
+  }
+  
+
+.riframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+/*geral*/
+
+.logo {
+  margin-top: 1%;
+}
+
+div {
+  background-color: var(--corFundo);
+  text-align: center;
+  font-size: 120%;
+}
+
+div p {
+  text-align: justify;
+  padding: 1% 30%;
+}
+
+div ul {
+  text-align: justify;
+  padding: 1% 30%;
+}
+
+div div h1 {
+  padding-top: 0;
+  padding-bottom: 2%;
+  padding: 2%;
+}
+
+div div img {
+  padding: 2%;
+}
+
+#jwill{
+  padding-top: 2%;
+}
+
+@media only screen and (max-width: 768px) {
+  nav ul img{
+    display: none;
+  }
+  nav {
+    font-size:xx-small;
+  }
+
+  div {
+    text-align: center;
+    font-size: small;
+  }
+
+  div p {
+    text-align: justify;
+    padding: 1%;
+  }
+
+  div ul {
+    text-align: justify;
+    padding: 1% 10%;
+  }
+
+  div h1 {
+    font-size: medium;
+  }
+}
